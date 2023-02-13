@@ -1,8 +1,12 @@
 # Problem
 
--   When you run `yarn build` and try to run the extension in produciton build. The messaging is broken and you get this error:
-    `Error: Could not establish connection. Receiving end does not exist.`
--   In firefox the error is in background script and in chrome it is in the popup window.
+## How to reproduce
+
+1. Run `yarn build`
+2. Load the unpacked extension in chrome
+3. Open the popup window
+4. Click on the button
+5. You will see the error in the console (With chrome in popup window and with firefox in background script)
 
 -   When you run `yarn dev`, the messaging works and you can send messages to background script.
 
