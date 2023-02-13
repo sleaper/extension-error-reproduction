@@ -19,7 +19,6 @@ export function Popup() {
                 <hr />
                 <button
                     className={css.btn}
-                    data-testid="scroll-to-top"
                     onClick={() =>
                         browser.runtime.sendMessage({ gotMessage: true })
                     }
